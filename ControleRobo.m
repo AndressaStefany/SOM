@@ -5,7 +5,7 @@ function finalRad= ControleRobo(serPort)
     while(1)
         x= genSonar(serPort);
         v = obj.AvaliaEntrada(x);
-        v=v*0.5;
+        v=v*0.9;
         %position= getPosition(serPort);
         %Vector of doubles [front left back right]
         %d= [ReadSonar(serPort, 1) ReadSonar(serPort, 2) ReadSonar(serPort, 3) ReadSonar(serPort, 4)]

@@ -139,6 +139,8 @@ function updateSim2(timer, event, obj, handles)
     velociades= GetVelocidades(robo)*2;
     distLidar= genLidar(obj);
     position= getPosition(obj);
+    %position= getPosition(serPort);
+    scatter(position(1),position(2)); hold on;
     fid=fopen('controleManual.txt','a');
     %fprintf('%.3f %.3f %.3f\n',position);
     fprintf('%.3f %.3f %.3f %.3f %.3f %.3f\n',[distSonar velociades]);

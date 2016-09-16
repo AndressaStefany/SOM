@@ -15,7 +15,7 @@ classdef RedeNeural < handle
            
            obj.numCam=4; obj.numEntradas=4; obj.numSaidas=2;
            obj.pfa=1; obj.afa=1; obj.eta= 0.01;
-           obj.faCamada= [2 2 2 3];
+           obj.faCamada= [2 2 2 1];
            obj.numNeuCam= [4 4 3 2];
        end
        function CarregaConjuntoEntradaSaida(obj)

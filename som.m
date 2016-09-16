@@ -25,7 +25,7 @@ function w = som(number,nomeArquivo, eta, sigma, numEntrada)
                     distancia(i,j) = distEuclidiana( w{i,j}, entrada );
                 end
             end
-            %identificaçao da posicao do neuronio vencedor
+            %identificaï¿½ao da posicao do neuronio vencedor
             [linha, coluna] = neuroVencedor(distancia);
             %atualizar os pesos
             for i = 1:number
@@ -58,7 +58,7 @@ function distancia = distEuclidiana(a, b)
     distancia = sqrt(sum( (a - b).^2));
 end
 
-%Retorna a posiçao do neuronio com menor distancia euclidiana
+%Retorna a posiï¿½ao do neuronio com menor distancia euclidiana
 function [linha, coluna] = neuroVencedor( neuroMatriz )
     [M,I] = min(neuroMatriz(:));
     [linha, coluna] = ind2sub(size(neuroMatriz),I);
