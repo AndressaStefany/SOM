@@ -1,5 +1,5 @@
 # SOM
-Rede Neural auto-organizável
+Self Organized Maps
 
 ## Creators
 
